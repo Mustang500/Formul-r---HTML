@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Projekt</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="bootstrap-datepicker.js"></script>
+		<script src="bootstrap-datepicker.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="bootstrap-datepicker3.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap-datepicker3.css.map">
+		<link rel="stylesheet" type="text/css" href="bootstrap-datepicker3.min.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap-datepicker3.min.css.map">
+
+
+	</head>
+
+	
+	 <body>
+	 
+	<div id="center">
+		<table class="inputTable">
+
+			<tr>
+				<td class="label"><b>Name:</b></td>
+				<td>
+					<center><input id="name" type="text" onkeypress="return alpha(event,letters)"  placeholder="Name"/></center>
+				</td>
+
+				<td class="label"><b>Surename:</b></td>
+				<td id="inputEmail">
+					<center>
+						
+							<input id="email" type="text" placeholder="Surename"  name="email">
+						
+					</center>
+				</td>
+				
+				<td id="inputAge" class="label"><b>Age:</b></td>
+				<td>
+					<center><input id="age" type="text" name="myDate" onkeypress="return alpha(event,numbers)" placeholder="age"/></center>
+				</td>
+
+
+				<td>
+					<input id="sexM" type="radio" name="pohlavie" value="Man" name="sex" />Man <br/>
+					<input id="sexW" type="radio" name="pohlavie" value="Woman" name="sex" />Woman<br/>
+				</td>
+			</tr>
+
+		</table>  
+
+
+</form>
+		<button class="button" onclick="createRow()">OK</button>
+	    
+		<table id="resultTable" class="inputTable" >
+		    <tbody>
+				<tr id="resultHeaderRow">
+					<th onclick="sortTable(0)">Name</button></th>
+					<th onclick="sortTable(1)">Surename</th>
+					<th onclick="sortTable(2)">Age</th>
+					<th onclick="sortTable(3)">Sex</th>
+					<th>Select</th>
+				</tr>
+			</tbody>			
+		</table>
+
+		<sctipt>
+
+		
+	
+	</body>
+</html>
